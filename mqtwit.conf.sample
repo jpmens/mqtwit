@@ -1,0 +1,18 @@
+# Twitter
+consumer_key            = 'xxxxxxxxxxxxxxxxxxxxxx'
+consumer_secret         = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+token                   = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+token_secret            = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+
+# Optional: lat, long, place
+
+lat     = None
+lon     = None
+place   = None
+
+mqtt_broker = 'localhost'
+mqtt_broker_port = 1883
+
+# Optional: credentials for broker
+username = None
+password = None
