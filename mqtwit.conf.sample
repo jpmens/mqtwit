@@ -13,6 +13,8 @@ place   = None
 mqtt_broker = 'localhost'
 mqtt_broker_port = 1883
 
+topic = 'home/status/#'
+
 # Optional: credentials for broker
 username = None
 password = None

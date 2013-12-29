@@ -40,7 +40,7 @@ import sys
 def on_connect(mosq, userdata, rc):
     print("Connect: rc: "+str(rc))
 
-    mqttc.subscribe("home/status/#", 0)
+    mqttc.subscribe(conf['topic'], 0)
 
 def on_message(mosq, userdata, msg):
     print(msg.topic+" "+str(msg.qos)+" "+str(msg.payload))
