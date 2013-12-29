@@ -5,7 +5,7 @@ MQTT to Twitter
 Example:
 
 ```
-mosquitto_pub -h hippo -t home/status/1 -m 'Hello peeps!'
+mosquitto_pub -t home/status/1 -m 'Hello peeps!'
 ```
 
 Result:
