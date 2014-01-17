@@ -28,10 +28,41 @@ Result:
 
 ![Screenshot](jmbp-783.jpg)
 
+### Configuration
+
+Export an environment variable called `MQTWITCONF` containing the path of
+your configuration file (defaults to `mqtwit.conf`). This allows you to
+run multiple instances with different Twitter accounts, if you need that.
+
+Configure `mqtwit.conf` by copying the sample file `mqtwit.conf.sample`
+and adjust to your environment.
+
+```
+# Twitter
+consumer_key            = 'xxxxxxxxxxxxxxxxxxxxxx'
+consumer_secret         = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+token                   = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+token_secret            = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+
+# Optional: lat, long, place for adding Geo location to your tweets
+lat     = None
+lon     = None
+place   = None
+
+mqtt_broker = 'localhost'
+mqtt_broker_port = 1883
+
+topic = 'home/status/#'
+
+# Optional: credentials for broker (may be None)
+username = None
+password = None
+```
+
 ### Requirements
 
 * Twitter auth tokens
-* MQTT broker (e.g. [Mosquitto](http://mosquitto.org)
+* MQTT broker (e.g. [Mosquitto](http://mosquitto.org))
 * Mosquitto.py 
 * [Python Twitter](https://pypi.python.org/pypi/python-twitter)
 
