@@ -36,6 +36,7 @@ import twitter  # pip install python-twitter
 import mosquitto
 import time
 import sys
+import os
 
 def on_connect(mosq, userdata, rc):
     print("Connect: rc: "+str(rc))
@@ -84,7 +85,7 @@ if __name__ == '__main__':
     conf = {}
 
     try:
-        execfile('mqtwit.conf', conf)
+        execfile(os.getenv('MQTWITCONF', 'mqtwit.conf'), conf)
     except Exception, e:
         print "Cannot load configuration file: %s" % str(e)
         sys.exit(1)
