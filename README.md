@@ -1,5 +1,7 @@
 # MQTWIT
 
+** This program is obsolete: see [mqttwarn](https://github.com/jpmens/mqttwarn) for a much more capable program **
+
 This program subscribes to an [MQTT] topic, extracts the text (!) payload,
 truncates that to about 140 and tweets the result on a configurable Twitter
 account.
